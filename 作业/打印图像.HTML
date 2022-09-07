@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /* 209001019 王青龙*/
+   //三角形打印
+       for(var i=1; i<=5; i++)//行数
+       {
+           for(var j=5-i; j>=0; j--)//打印空格
+           {
+               document.write("&nbsp");
+           }
+           for(var j=1; j<=i; j++)//打印*
+           {
+               document.write("*"+"&nbsp");
+           }
+           document.write("<br/>");//换行
+       }
+   //四边形打印
+       for(var i=1; i<=5; i++)//外层行数
+       {
+           for(var j=5-i; j>=0; j--)//每行空格
+           {
+               document.write("&nbsp");
+           }
+           for(var j=1; j<=5; j++)//每行*
+           {
+               document.write("*"+"&nbsp");
+           }
+           document.write("<br/>");//换行
+       }
+   
+   //打印菱形
+     for (var i = 1; i <= 3; i++)//上三角形行数
+       {
+       for (var j = 1; j <= 3 - i; j++)//每行空格
+       {
+         document.write("&nbsp"+"&nbsp");
+       }
+       for (var k = 1; k <= 2 * i - 1; k++)//每行*
+       {
+         document.write("*"+"&nbsp");
+       }
+       document.write("<br/>");//换行
+     }
+       for (i = 1; i <= 2; i++) //下三角行数
+       {
+         for (j = 1; j <= i; j++) //每行空格
+         {
+           document.write("&nbsp"+"&nbsp");
+         }
+         for (k = 1; k <= 5 - 2 * i; k++) //每行*
+         {
+           document.write("*"+"&nbsp");
+         }
+         document.write("<br/>");//换行
+       }
+       </script>
+</head>
+<body>
+    
+</body>
+</html>
